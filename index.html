@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Froggie Software Developer</title>
     <meta http-equiv="refresh" content="120">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
     <style>
 
 
@@ -110,47 +116,59 @@
         .form-input::-ms-input-placeholder{
             color: #999;
         }
+        .font-style{
+            font-family: 'Birthstone', cursive;
+        }
+        .pad-font{
+            font-family: 'Padauk', sans-serif;
+        }   
 
     </style>
 </head>
 <body style="margin: 0; padding: 0;background-color: rgb(228, 227, 227);">
     <div style="background-color: #f6f9f9;">
-        <div style="max-width: 1500px; margin: 0 auto; padding: 30px 0;">
-            <img style="display: block;" src="images/logogallego2021.png" alt="" height="200" width="150">
-            
-        </div>
+        
     </div>
     
 
     <header>
-
+        
         <div class="info-header" style="text-align: center;">
-
-            <h2 style="font-size: 50px ;color: antiquewhite; font-family: Verdana, Geneva, Tahoma, sans-serif;">Alejandro Gallego</h2>
+            
+            <br>
+            <br>
+            <br>
+            <h2 class="font-style" style="font-size: 80px ;color: antiquewhite; padding: 0 10px; ">Alejandro Gallego</h2>
             <hr>
-            <p style="color: antiquewhite;font-family: Georgia, 'Times New Roman', Times, serif;font-size: 20px;">
+            <p class="font-style" style="color: antiquewhite; font-size: 30px;">
                 Software Developer
             </p>
             <br>
-            <a href="https://gmail.com/" target="_blank" >
+            <div>
+                <a href="https://gmail.com/" target="_blank" >
 
-                <button class="button_encabezado" id="button_encabezado">
-
-                    Contact me
-
-                </button>
-
-            </a>
-
+                    <button class="button_encabezado " id="button_encabezado">
+    
+                        Contact me
+    
+                    </button>
+    
+                </a>
+            </div>
+            
+            <div style="max-width: 1500px; float: left; ">
+                <img style="display: block;" src="images/logogallego2021.png" alt="" height="200" width="150">
+                
+            </div>
         </div>
 
     </header>
     <section id="bg-1"> 
-        <div class="contenedor" style="padding: 150px 0;text-align: center;">
+        <div class="contenedor" style="padding: 20px 0;text-align: center;">
 
-            <h2 style="font-family: unset;">Me, simple & desing</h2>
+            <h2 class="pad-font">Me, simple & desing</h2>
             <hr style="color: rgb(144, 58, 224);">
-            <p>I am a Java and python software developer. I love that my code compiles as it forces me to continue evolving  
+            <p class="pad-font">I am a Java and python software developer. I love that my code compiles as it forces me to continue evolving  
                 as a developer. My demand on myself is not to stop until I achieve the goal.I have experience  using HTML5, CSS and databases. 
                 In my studies I am learning to develop in Kotlin, JavaScript, PHP . <br>
                 I can serve for your company given my commitment and experience</p>
@@ -163,7 +181,7 @@
             <img src="Strict-assets/icon-movil.jpg" alt="">
             <hr>
             <h5>Mobile app development</h5>
-            <span>I can develop a mobile application using Android Studio with Kotlin</span>
+            <span class="pad-font" style="font-size: 18px;">I can develop a mobile application using Android Studio with Kotlin</span>
         </div>
 
     
@@ -172,7 +190,7 @@
             <img src="Strict-assets/icon-enviar.jpg" alt="">
             <hr>
             <h5>Desk app development</h5>
-            <span>I can develop a mobile application using Android Studio with Kotlin</span>
+            <span class="pad-font" style="font-size: 18px;">I can develop a mobile application using Android Studio with Kotlin</span>
         </div>
 
     
@@ -181,11 +199,11 @@
             <img src="Strict-assets/icon-voz.jpg" alt="">
             <hr>
             <h5>Boxed app development</h5>
-            <span>I can develop a mobile application using Android Studio with Kotlin</span>
+            <span class="pad-font" style="font-size: 18px;">I can develop a mobile application using Android Studio with Kotlin</span>
         </div>
 
     </section>
-    <hr style="padding: 120px 0;">
+    <hr style="padding: 20px 0;">
     <section id="showcase" class="bg-1 pd-90">
 
         
