@@ -32,7 +32,7 @@
             margin: 0;
         }
         .button_encabezado{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-family: Verdana;
             background-color: transparent;
             color: antiquewhite;
             padding: 15px 30px;
@@ -59,8 +59,6 @@
             padding: 0 15px;
             width: 33.33333;
             text-align: center;
-            
-           
             
         }
         .caja_servicio img{
@@ -180,6 +178,15 @@
                 left: 125%;
             }
         }
+        .esquina_izquierda{
+            border-top-left-radius: 35%;
+        }
+        .corner_down_net{
+            border-bottom-right-radius: 35%;
+        }
+        .border_radius{
+            border-radius: 50%;
+        }
 
         
     </style>
@@ -231,13 +238,14 @@
                 as a developer. My demand on myself is not to stop until I achieve the goal.I have experience  using HTML5, CSS and databases. 
                 In my studies I am learning to develop in Kotlin, JavaScript, PHP . <br>
                 I can serve for your company given my commitment and experience</p>
+                
         </div>
         
     </section>
     <section class="servicios" id="servicios" style="padding: 120px 0;">
 
         <div class="caja_servicio">
-            <img class="efect" src="Strict-assets/icon-movil.jpg" alt="">
+            <img class="efect border_radius" src="Strict-assets/icon-movil.jpg" alt="">
             <hr>
             <h5>Mobile app development</h5>
             <span class="pad-font" style="font-size: 18px;">I can develop a mobile application using Android Studio with Kotlin</span>
@@ -246,7 +254,7 @@
     
 
         <div class="caja_servicio">
-            <img class="efect" src="Strict-assets/icon-enviar.jpg" alt="">
+            <img class="efect border_radius" src="Strict-assets/icon-enviar.jpg" alt="">
             <hr>
             <h5>Desk app development</h5>
             <span class="pad-font" style="font-size: 18px;">I can develop a desk application with Java and Python </span>
@@ -255,7 +263,7 @@
     
 
         <div class="caja_servicio">
-            <img class="efect" src="Strict-assets/icon-voz.jpg" alt="">
+            <img class="efect border_radius" src="Strict-assets/icon-voz.jpg" alt="">
             <hr>
             <h5>Boxed app development</h5>
             <span class="pad-font" style="font-size: 18px;">I can develop a mobile application using Android Studio with Kotlin</span>
@@ -274,7 +282,7 @@
             <div class="galeria">
                 <div class="fila">
                     <div class="cajaGaleria sature">
-                        <img src="Strict-assets/show-1.jpg" alt="">
+                        <img src="Strict-assets/show-1.jpg" alt="" class="esquina_izquierda">
                     </div>
                     <div class="cajaGaleria sature">
                         <img src="Strict-assets/show-2.jpg" alt="">
@@ -298,7 +306,7 @@
                     <div class="cajaGaleria sature">
 
                         <a href="docs/AGE_CV.zip" download="AGE_CV.zip">
-                            <img src="images/canoing_art.jpg" alt="">
+                            <img src="images/canoing_art.jpg" alt="" class="corner_down_net">
                         </a>
                         
                     </div>
@@ -345,15 +353,15 @@
             <div class="socials">
 
                 <a href="https://twitter.com/froggiecode" target="_blank">
-                    <img src="Strict-assets/icon-twitter.jpg" alt="" style="width: 5%;">
+                    <img class="border_radius" src="Strict-assets/icon-twitter.jpg" alt="" style="width: 5%;">
                 </a>
         
                 <a href="https://www.facebook.com/alecx.vaio" target="_blank"  >
-                    <img src="Strict-assets/icon-facebook.jpg" alt="" style="width: 5%;">
+                    <img class="border_radius" src="Strict-assets/icon-facebook.jpg" alt="" style="width: 5%;">
                 </a>
-        
+                <!-- Need to change or drop it-->
                 <a href="#" target="_blank">
-                    <img src="Strict-assets/icon-linked-in.jpg" alt="" style="width: 5%;">
+                    <img class="border_radius" src="Strict-assets/icon-linked-in.jpg" alt="" style="width: 5%;">
                 </a>
                 
             </div>
