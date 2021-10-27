@@ -25,7 +25,7 @@
         header{
             width: 100%;
             height: 400px;
-            background: url(images/morado_1.jpg);
+            background: url(images/morado_1.jpg) no-repeat center center fixed;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -217,6 +217,12 @@
         .font-space-mono{
             font-family: 'Space Mono', monospace;
         }
+        .center-item{
+            position:relative;
+            display: block;
+            left: 50%;
+            
+        }
         
         
 
@@ -258,7 +264,7 @@
 
             <h2 class="font-space-mono sombreado">Me, simple & desing</h2>
             <hr style="color: rgb(144, 58, 224);">
-            <p class="font-space-mono sombreado" >I am a software developer. I love creating programs and websites that make me evolve as a developer. My demand on myself is not to stop until I achieve the goal.I have experience using HTML5, CSS and databases. 
+            <p class="font-space-mono sombreado" style="word-wrap: break-word;" >I am a software developer. I love creating programs and websites that make me evolve as a developer. My demand on myself is not to stop until I achieve the goal.I have experience using HTML5, CSS and databases. 
                 In my studies I am learning to develop in Kotlin, JavaScript, PHP . <br>
                 I can serve for your company given my commitment and experience</p>
                 
@@ -355,11 +361,8 @@
             <input class="form-input font-space-mono" type="email" name="email" id="email" placeholder="Email"><br>
             <textarea class="form-input font-space-mono" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
             <div style="display: flex;">
-                <div class="check" style="width: 70%;">
-                    <input  type="checkbox" name="" id="subs">
-                    <label class="font-space-mono" style="color: #999;" for="subs">Confirm</label>
-                </div>
-                <div class="btn"  style="width: 30%;">
+                
+                <div class="btn center-item"  style="width: 50%;">
                     <button class="button_encabezado font-space-mono" type="submit">Send</button>
                 </div>
             </div>
