@@ -23,9 +23,7 @@
             background-color: #9413bb
         }
 
-        h1,h2,h3,h4,h5,h6,span,p,strong,a,button,label {
-            font-family: sans-serif;
-        }
+        
         .all{
             width: 100%;
             max-width: 100%;
@@ -35,22 +33,22 @@
         header{
             width: 100%;
             height: 100%;
+
             background: url(images/morado_1.jpg);
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
             background-attachment: fixed;
+
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
+            box-sizing: border-box;
             
             
         }
-        h1,h2,h3,h4,h5,h6{
-            margin: 0;
-            white-space: pre;
-        }
+        
         .button_encabezado{
             font-family: Verdana;
             background-color: transparent;
@@ -63,6 +61,7 @@
         }
         .bg-1{
             background-color: rgba(228, 227, 227, 0.61);
+            
         }
         .contenedor{
             width: 1100px;
@@ -226,19 +225,26 @@
             color: white;
         }
         .logo{
-            height:30%;
-            width: 150px;
+            width: 30%;
+            height:30%; 
+            
             max-width: 1200px;
             float: left;
             align-items: initial;
-            position: relative;
+            
             display: block;
-            bottom: -5px;
+            bottom: -25%;
             right: 60%;
             max-width: 1200px;
             
             
             
+        }
+        .br-lite{
+            width:40%;
+            
+            right: 50%;
+            margin: 0 auto;
         }
         .font-space-mono{
             font-family: 'Space Mono', monospace;
@@ -272,9 +278,29 @@
                 width: 100%;
                 height: auto;
             }
+            .img_r{
+            width: 8%;
+            height: 100%;
+            }
             
         }
-
+        .container2{
+            width: 96%;
+            max-width: 960px;
+        }
+        .img_r{
+            width: 8%;
+            height: auto;
+            max-width: 400px;
+            align-items: initial;
+            position: relative;
+            display: inline-block;
+            
+            
+        }
+        .info-header{
+           text-align: center; 
+        }
         
     </style>
 </head>
@@ -288,7 +314,7 @@
             <br>
             <br>
             <h2 class="font-style" style="font-size: 80px ;color: antiquewhite; padding: 0 2px; ">Alejandro Gallego</h2>
-            <hr>
+            <hr class="br-lite">
             <p class="font-style" style="color: antiquewhite; font-size: 40px;">
                 Software Developer
             </p>
@@ -302,19 +328,19 @@
         </div>
 
     </header>
-    <section id="bg-1"> 
-        <div class="contenedor" style="padding: 20px 0;">
+    <section id="bg-1 all"> 
+        <div class="contenedor all" style="padding: 20px 0;">
 
-            <h2 class="font-space-mono sombreado">Me, simple & desing</h2>
+            <h1 class="font-space-mono sombreado">Me, simple & desing</h1>
             <hr style="color: rgb(144, 58, 224);">
-            <p class="font-space-mono sombreado" style="word-wrap: break-word;" >I am a software developer. I love creating programs and websites that make me evolve as a developer. My demand on myself is not to stop until I achieve the goal.I have experience using HTML5, CSS and databases. 
+            <p class="font-space-mono sombreado" style="" >I am a software developer. I love creating programs and websites that make me evolve as a developer. My demand on myself is not to stop until I achieve the goal.I have experience using HTML5, CSS and databases. 
                 In my studies I am learning to develop in Kotlin, JavaScript, PHP . <br>
                 I can serve for your company given my commitment and experience</p>
                 
         </div>
         
     </section>
-    <section class="servicios" id="servicios" style="padding: 120px 0;">
+    <section class="servicios all" id="servicios" style="padding: 120px 0;">
 
         <div class="caja_servicio">
             <img class="efect border_radius sombreado" src="Strict-assets/icon-movil.jpg" alt="">
@@ -344,7 +370,7 @@
 
     </section>
     <hr style="padding: 20px 0;">
-    <section id="showcase" class="bg-1 pd-90">
+    <section id="showcase all" class="bg-1 pd-90">
 
         
         <div class="contenedor">
@@ -359,25 +385,24 @@
                     
                     <div class="cajaGaleria sature">
                         
-                        <img src="Strict-assets/show-1.jpg" alt="" class="esquina_izquierda">
-                        <figcaption>Trabajo</figcaption>
+                        <img src="Strict-assets/show-1.jpg" alt="" class="esquina_izquierda img_r">
                     </div>
                     <div class="cajaGaleria sature">
-                        <img class="low_border" src="Strict-assets/show-2.jpg" alt="">
+                        <img class="low_border img_r" src="Strict-assets/show-2.jpg" alt="">
                     </div>
                     <div class="cajaGaleria sature">
-                        <img class="low_border" src="Strict-assets/show-3.jpg" alt="">
+                        <img class="low_border img_r" src="Strict-assets/show-3.jpg" alt="">
                     </div>
                 </div>
                 
                     <div class="fila">
                         <div class="cajaGaleria sature">
-                            <img src="Strict-assets/show-4.jpg" alt="" class="img-4">
+                            <img src="Strict-assets/show-4.jpg" alt="" class="img-4 img_r">
                         </div>
                         <div class="cajaGaleria sature">
 
                             <a title="Sniping_shop_bot" href="docs/sniper_bot.zip" download="sniper_bot.zip">
-                                <img src="images/bot_ss.jpg" alt="" class="low_border">
+                                <img src="images/bot_ss.jpg" alt="" class="low_border img_r">
                             </a>
                             
 
@@ -385,7 +410,7 @@
                         <div class="cajaGaleria sature">
 
                             <a title="CV" href="docs/AGE_CV.zip" download="AGE_CV.zip">
-                                <img src="images/canoing_art.jpg" alt="" class="corner_down_net">
+                                <img src="images/canoing_art.jpg" alt="" class="corner_down_net img_r">
                                 
                             </a>
                             
@@ -401,15 +426,15 @@
         
     
     <section id="stay" style="background: url(Strict-assets/bg-stay.jpg);" class="pd-90 ">
-       <div class="contenedor">
-        <div class="encabezado" style="text-align: center; margin-bottom: 20px;">
+       <div class="contenedor all">
+        <div class="encabezado all" style="text-align: center; margin-bottom: 20px;">
 
             <h2 class="fs-40 sombreado font-space-mono" style="color: antiquewhite;">Give me your contact </h2>
             <span class="fs-40 sombreado font-space-mono" style="color: antiquewhite;">I will contact you in less than 48 hours</span>
 
         </div>
         <hr>
-        <form  action="froggygallego@gmail.com" id="contact" style="width: 1065px;">
+        <form  action="froggygallego@gmail.com" id="contact" class="all" style="">
 
             <input class="form-input font-space-mono" type="text" placeholder="Full name">
             <input class="form-input font-space-mono" type="email" name="email" id="email" placeholder="Email"><br>
@@ -430,8 +455,8 @@
     
     <footer style="text-align: center;">
         <span class="sombreado font-space-mono" style="width: 60%;">Copyright 2021 Gallego,Alejandro</span>
-        <div class="contenedor">
-            <div class="socials">
+        <div class="contenedor all">
+            <div class="socials all">
 
                 <a href="https://twitter.com/froggiecode" target="_blank">
                     <img class="border_radius" src="Strict-assets/icon-twitter.jpg" alt="" style="width: 5%;">
