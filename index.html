@@ -12,262 +12,9 @@
     <link rel="shortcut icon" href="images/logogallego2021.png" />
     <!--Font Style rest-->
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        *::selection{
-            background-color: #9413bb
-        }
         
-
-        
-        .all{
-            width: 100%;
-            max-width: 100%;
-            box-sizing: border-box;
-
-        }
-        header{
-            width: 100%;
-            height: 100%;
-            
-            background: url(images/morado_1.jpg);
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            box-sizing: border-box;
-            
-            
-        }
-        
-        .button_encabezado{
-            font-family: Verdana;
-            background-color: transparent;
-            color: antiquewhite;
-            padding: 15px 30px;
-            border-radius: 5px;
-            font-size: 18px;
-            border-color: #999;
-
-        }
-        .bg-1{
-            background-color: rgba(228, 227, 227, 0.61);
-            
-        }
-        .contenedor{
-            width: auto;
-            margin: 0 auto;
-            text-align: center;
-
-        }
-        .servicios{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 120px 0;
-        }
-        
-        .pd-90{
-            padding: 90px 0;
-        }
-        .fs-40{
-            font-size: 40px;
-        }
-        
-        .socials{
-            align-items: center;
-            justify-content: center;
-        }
-        .form-input{
-            width: 80vw;
-            padding: 18px;
-            background-color: transparent;
-            border: 1px solid whitesmoke;
-            margin-bottom: 10px;
-            border-radius:  4px;
-            color: white;
-
-        }
-        .form-input::placeholder{
-            color: #999;
-        }
-        .form-input:-ms-input-placeholder{
-            color: #999;
-        }
-        .form-input::-ms-input-placeholder{
-            color: #999;
-        }
-        .font-style{
-            font-family: 'Birthstone', cursive;
-        }
-        .pad-font{
-            font-family: 'Padauk', sans-serif;
-        }   
-        .sature:hover{
-            filter: saturate(180%);
-        }
-        
-        .button_caja{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            background-color: transparent;
-            color: antiquewhite;
-            padding: 15px 30px;
-            border-radius: 5px;
-            font-size: 18px;
-            border-color: aqua;
-
-        }
-        .efect:hover{
-            border-radius: 50%;
-            -webkit-border-radius:50%;
-            box-shadow: 0px 0px 4px 4px #b680e7;
-            -webkit-box-shadow: 0px 0px 4px 4px #b680e7;
-            transform: rotate(360deg);
-            -webkit-transform: rotate(360deg);
-
-        }
-        .efect{
-            box-shadow: 0px 0px 2px 2px #b680e7;
-            -webkit-box-shadow: 0px 0px 2px 1px #b680e7;
-        }
-        .hover14 figure {
-	        position: relative;
-        }
-        
-       
-        .esquina_izquierda{
-            border-top-left-radius: 30%;
-        }
-        .corner_down_net{
-            border-bottom-right-radius: 35%;
-        }
-        .border_radius{
-            border-radius: 50%;
-        }
-        .border_radius_right_top{
-            border-top-right-radius: 2%;
-        }
-        .img-4{
-            border-bottom-left-radius: 10%;
-            border-top-right-radius: 2%;
-            border-top-left-radius: 2%;
-            border-bottom-right-radius: 2%;
-            
-        }
-        .low_border{
-            border-radius: 2%;
-        }
-
-        .sombreado::selection{
-            background-color: #9413bb;
-            color: white;
-        }
-        .logo{
-            width: 30%;
-            height:30%; 
-            
-            max-width: 1200px;
-            float: left;
-            align-items: initial;
-            
-            display: block;
-            right: 60%;
-            max-width: 1200vw;            
-            
-            
-        }
-        .br-lite{
-            width:40%;
-            
-            right: 50%;
-            margin: 0 auto;
-        }
-        .font-space-mono{
-            font-family: 'Space Mono', monospace;
-        }
-        .center-item{
-            position:relative;
-            display: block;
-            left: 50%;
-            
-        }
-        
-        /* Visible text */
-        
-        @media screen and (max-width: 767px) {
-            
-            header{
-                width: 100%;
-                height: auto;
-            }
-            
-        }
-        
-        
-        
-        .info-header{
-           text-align: center; 
-        }
-        
-        .cajaGaleria{
-            width: 100%;
-            padding: 0 5px;
-            position: relative;
-            max-width: 350px;
-        }
-        .cajaGaleria img{
-            width: 100%;
-            display: block;
-            position: relative;
-            max-width: 350px;
-
-        }
-        .fila{
-            display: flex;
-            margin-bottom: 11px;
-            justify-content: center;
-            
-        }
-        .caja_servicio{
-            padding: 0 15px;
-            width: auto;
-            text-align: center;
-            
-        }
-        .caja_servicio img{
-            width:8vw;
-            height: auto;
-            margin-bottom: 7px;
-            align-items: center;
-            justify-content: center;
-        }
-        .caja_servicio h5{
-            width: auto;
-            height: auto;
-            justify-content: center;
-            font-size: 2vw;
-            margin-bottom: 3%;
-            
-        }
-        .caja_servicio h5 strong{
-            width: 2vw;
-            height: auto;
-            justify-content: center;
-            font-size: 2vw;
-            margin-bottom: 3%;
-            
-        }
-        .caja_servicio span{
-            font-size: 1.7vw;
-        }
         
         
         
@@ -282,9 +29,9 @@
             <br>
             <br>
             <br>
-            <h2 class="font-style" style="font-size: 7vw ;color: antiquewhite; padding: 0 2px;text-shadow: #b680e7 4px 4px; ">Alejandro Gallego</h2>
+            <h2 class="font-style pip" style="color: antiquewhite; padding: 0 2px;text-shadow: #b680e7 4px 4px; ">Alejandro Gallego</h2>
             <hr class="br-lite">
-            <p class="font-style" style="color: antiquewhite; font-size: 5vw; text-shadow: #b680e7 1px 1px;">
+            <p class="font-style" style="color: antiquewhite; text-shadow: #b680e7 1px 1px;">
                 Software Developer
             </p>
             
@@ -300,9 +47,9 @@
     <section id="bg-1 all"> 
         <div class="contenedor all" style="padding: 20px 10%;">
 
-            <h1 class="font-space-mono sombreado" style="font-size: 3vw; ">Me, simple & desing</h1>
+            <h1 class="font-space-mono sombreado" style="">Me, simple & desing</h1>
             <hr style="color: rgb(144, 58, 224);">
-            <p class="font-space-mono sombreado" style="font-size: 1.5vw;" >I am a software developer. I love creating programs and websites that make me evolve as a developer. My demand on myself is not to stop until I achieve the goal.I have experience using Java, Python, HTML5, CSS and databases. 
+            <p class="font-space-mono sombreado" style="" >I am a software developer. I love creating programs and websites that make me evolve as a developer. My demand on myself is not to stop until I achieve the goal.I have experience using Java, Python, HTML5, CSS and databases. 
                 <br>In my studies I am learning to develop in Kotlin, JavaScript, PHP. <br>
                 I can serve for your company given my commitment and experience.</p>
                 
@@ -347,8 +94,8 @@
 
     <div class="contenedor">
         <div class="encabezado" style="text-align: center;margin-bottom: 50px;">
-            <h3 class="c1 font-space-mono sombreado" style="font-size: 3vw;">Showcase of my work </h3>
-            <span class="c2 font-space-mono sombreado" style="font-size: 1.3vw;">Contact: <strong class="sombreado font-space-mono" style="font-size: 1.3vw"><a style="color: black;text" href="GEalex1996@gmail.com"><strong class="sombreado font-space-mono"></strong>GEalex1996@gmail.com</strong></a> </strong> </span>
+            <h3 class="c1 font-space-mono sombreado" style="">Showcase of my work </h3>
+            <span class="c2 font-space-mono sombreado" style="">Contact: <strong class="sombreado font-space-mono" style=""><a style="color: black;" href="GEalex1996@gmail.com"><strong class="sombreado font-space-mono"></strong>GEalex1996@gmail.com</strong></a> </strong> </span>
         </div>
     <div class="galeria">
 
@@ -413,7 +160,7 @@
        <div class="contenedor all">
         <div class="encabezado all" style="text-align: center; margin-bottom: 20px;">
 
-            <h2 class="fs-40 sombreado font-space-mono" style="color: antiquewhite; font-size: 3vw">Give me your contact </h2>
+            <h2 class="fs-40 sombreado font-space-mono" style="color: antiquewhite; font-size: 1.5rem;">Give me your contact </h2>
             <span class="fs-40 sombreado font-space-mono" style="color: antiquewhite; font-size: 3vw">I will contact you in less than 48 hours</span>
 
         </div>
@@ -443,11 +190,11 @@
             <div class="socials all">
 
                 <a href="https://twitter.com/froggiecode" target="_blank">
-                    <img class="border_radius" src="Strict-assets/icon-twitter.jpg" alt="" style="width: 5%;">
+                    <img class="border_radius img_rrss" src="Strict-assets/icon-twitter.jpg" alt="" style="">
                 </a>
         
                 <a href="https://www.facebook.com/alecx.vaio" target="_blank"  >
-                    <img class="border_radius" src="Strict-assets/icon-facebook.jpg" alt="" style="width: 5%;">
+                    <img class="border_radius img_rrss" src="Strict-assets/icon-facebook.jpg" alt="" style="">
                 </a>
                 <!-- Need to change or drop it-->
                 
